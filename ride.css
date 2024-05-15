@@ -1,0 +1,191 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    position:fixed;
+    z-index: 2;
+}
+#bikeimg{
+    position: absolute;
+    z-index: 2;
+    height: 6vh;
+    margin-top: -0.5vh;
+    margin-left: -1vh;
+}
+#bikeimg:hover{
+    transform: scale(1.1);
+    transform: rotatey(180deg);
+}
+#logo{
+    display: inline-block;
+    height:6vh;
+    width:300vw;
+    position: absolute;
+    z-index: 2;
+    font-weight: bold;
+}
+#logo span{
+    color: black;
+    position: relative;
+    top: 6px;
+    left:38px
+}
+
+.loc{
+    position: static;
+    float: right;
+    margin-left: 80vw;
+
+}
+#loca{
+    position: absolute;
+    height: 4vh;
+    z-index: 3;
+    margin-top: 1.6vh;
+
+}
+#loca:hover{
+    transform: scalex(1.1);
+    
+}
+#lang{
+    height: 5vh;
+    position: absolute;
+    z-index: 2;
+    margin-left: 4vw;
+    margin-top: 0.9vh;
+}
+#lang:hover{
+    transform: scalex(1.2);
+    
+}
+#sign{
+    float: right;
+    position: absolute;
+    margin-top: 1vh;
+    margin-left: 10vw;
+    height: 5vh;
+    width:10vw;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+
+}
+#sign:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+#ride{
+    position: absolute;
+    width: 100vw;
+}
+#onride{
+    color: black;
+    position: absolute;
+    font-size: x-large;
+    margin-top: 55vh;
+    margin-left: 4vw;
+    font-weight: bolder;
+    font-size: xxx-large;
+    animation: 5s slide ease-in-out;
+}
+#onride:hover{
+    letter-spacing: 0.5vw;
+}
+#onride img{
+    position: absolute;
+    height: 20vh;
+    top: -29px;
+    left: -2vw;
+}
+#onride img:hover{
+    animation: 9s bike ease-in-out;
+
+}
+@keyframes bike {
+    0% {left:0vw}
+    100%{left:1000px}
+
+    
+}
+@keyframes slide {
+    0%{left: 55vw}
+    100%{left: 0vw}
+}
+#belowride{
+    color: black;
+    position: absolute;
+    margin-top: 73vh;
+    margin-left: 4vw;
+    font-size: larger;
+}
+#belowride:hover{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.search-box {
+font-size: 20px;
+border: solid 0.2em #000000;
+display: inline-block;
+position: relative;
+border-radius: 2.5em;
+}
+.search-box input[type=text] {
+font-family: inherit;
+font-weight: bold;
+width: 2.5em;
+height: 2.5em;
+padding: 0.3em 2.1em 0.3em 0.4em;
+border: none;
+box-sizing: border-box;
+background-color: transparent;
+border-radius: 2.5em;
+transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 150ms;
+}
+.search-box input[type=text]:focus {
+outline: none;
+}
+.search-box input[type=text]:focus, .search-box input[type=text]:not(:placeholder-shown) {
+width: 18em;
+transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.search-box input[type=text]:focus + button[type=reset], .search-box input[type=text]:not(:placeholder-shown) + button[type=reset] {
+transform: rotate(-45deg) translateY(0);
+transition: transform 150ms ease-out 800ms;
+}
+.search-box input[type=text]:focus + button[type=reset]:after, .search-box input[type=text]:not(:placeholder-shown) + button[type=reset]:after {
+opacity: 1;
+transition: top 150ms ease-out 950ms, right 150ms ease-out 950ms, opacity 150ms ease 950ms;
+}
+.search-box button[type=reset] {
+background-color: transparent;
+width: 1.4em;
+height: 1.4em;
+border: 0;
+padding: 0;
+outline: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 0.55em;
+right: 0.55em;
+transform: rotate(-45deg) translateY(2.2em);
+transition: transform 150ms ease-out 150ms;
+}
+.search-box button[type=reset]:before, .search-box button[type=reset]:after {
+content: "";
+background-color: #000000;
+width: 0.3em;
+height: 1.4em;
+position: absolute;
+}
+.search-box button[type=reset]:after {
+transform: rotate(90deg);
+opacity: 0;
+transition: transform 150ms ease-out, opacity 150ms ease-out;
+}
