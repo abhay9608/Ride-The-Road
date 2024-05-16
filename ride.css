@@ -99,8 +99,8 @@ header{
 #onride img{
     position: absolute;
     height: 20vh;
-    top: -29px;
-    left: -2vw;
+    top: -3vh;
+    left: -4vw;
 }
 #onride img:hover{
     animation: 9s bike ease-in-out;
